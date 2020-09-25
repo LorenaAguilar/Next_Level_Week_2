@@ -1,0 +1,84 @@
+/* CSS - Cascading StyleSheets*/
+
+:root {
+  /* Cores da raiz do projeto (todas que serão utilizadas)*/
+  /* Variáveis CSS */
+  --color-background: #f0f0f7;
+  --color-primary-lighter: #9871f5;
+  --color-primary-light: #916bea;
+  --color-primary: #8257e5;
+  --color-primary-dark: #774dd6;
+  --color-primary-darker: #9842c2;
+  --color-secondary: #04d361;
+  --color-secondary-dark: #04bf58;
+  --color-title-in-primary: #ffffff;
+  --color-text-in-primary: #d4c2ff;
+  --color-text-title: #32264d;
+  --color-text-complement: #9c98a6;
+  --color-text-base: #6a6180;
+  --color-line-in-white: #e6e6f0;
+  --color-input-background: #f8f8fc;
+  --color-button-text: #ffffff;
+  --color-box-base: #ffffff;
+  --color-box-footer: #fafafc;
+  --color-small-info: #c1bccc;
+  /* Tamanho da fonte*/
+  /* Tamanho da fonte padrão: 100% = 16px = 1rem*/
+  font-size: 60%; /* Controle das medidas rem*/
+
+  /* Rem é uma unidade de medida mais flexível, 
+  no projeto desenvolvido aqui, será utilizado o conceito de responsividade, 
+  logo, utilizaremos primeiro uma medida mais flexível para tornar possível
+  que o programa vá se adaptando a telas menores. */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*#container {
+  border: 1px solid red;
+  padding: 10px 40px 60px 2px;
+  /* O primeiro número é referente a parte de cima, 
+  o segundo a parte esquerda, o terceiro a parte direita
+   e o quarto a parte de baixo  */
+/* margin: 40px 10px;
+  width: 300px;
+  height: 300px;
+}*/
+
+html,
+body {
+  height: 100vh;
+}
+/* Display => Vai definir o comportamento (exibição) de todos os elementos dentro da caixa*/
+body {
+  background: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  /* font: 500 1.6rem Poppins; /* Peso da fonte, tamanho da fonte e estilo da fonte */
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  color: var(--color-text-base);
+}
+
+#container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%; /* Todo 1rem vai ser relativo a 10px*/
+  }
+}

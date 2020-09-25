@@ -1,0 +1,119 @@
+<!--
+    HTML
+    HyperText => Hipertexto
+    Markup => Marcação
+    Language => Linguagem -->
+
+<!DOCTYPE html>
+<!-- DOCTYPE => Faz com que os navegadores entendam que vamos utilizar o HTML na versão 5-->
+<!-- <html> => Isso é uma tag <html>: Dentro da tag eu coloco informações -->
+<html lang="pt_br">
+  <!-- Lang é um atributo da tag <htm>-->
+  <head>
+    <!--Dentro da tag head ficam as configurações do documento-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#8257E5" />
+    <title>Proffy | Sua plataforma de estudos online</title>
+    <!-- Essa tag vai mudar o título da minha página-->
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+
+    <!-- <style>
+      /* 
+        Cascading StyleSheet => Estilo de folha em cascata
+
+        O CSS prioriza as cascatas 
+
+        Força do CSS: 
+        Primeiro: O seletor => # => id
+        Segundo: Cascata => Exemplo: .page-landing h1 {...}
+        Terceiro: A tag em si
+        */
+
+      /**Acessando uma tag específica para estilizá-la
+         Colocamos o atributo e em seguida o valor **/
+      #page-landing {
+        color: red;
+      }
+    </style> -->
+
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/partials/page-landing.css" />
+
+    <!-- Link que vai buscar no google as fontes que vamos usar nesse projeto-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="page-landing">
+    <!-- id e class são atributos globais-->
+    <!--Todo elemento visível na página deve vir dentro da tag <body> -->
+
+    <div id="container">
+      <div class="logo-container">
+        <img src="/images/logo.svg" alt="Proffy" />
+        <h2>Sua plataforma de estudos online</h2>
+      </div>
+
+      <img
+        class="hero-image"
+        src="/images/landing.svg"
+        alt="Plataforma de estudos"
+      />
+
+      <!--<h1>Proffy</h1> -->
+      <!-- <h1> => Tag para exibir um título "forte"/"destacado"-->
+
+      <!--<p>Sua plataforma de estudos online</p>-->
+      <!-- <p> => Tag para exibir parágrafos-->
+      <!-- Essa tag geralmente provoca uma quebra de linha-->
+
+      <!--<img src="" alt="Logo" />-->
+      <!-- Tag para adicionarmos imagens a tela-->
+      <!-- src => Caminho da imagem-->
+      <!-- alt => Alternativa para quando o src não existe mais (é geralmente um texto referente a imagem)-->
+
+      <!--<button>Estudar</button>-->
+      <!-- Tag para criação de botões-->
+      <!--<button>Dar aulas</button>-->
+
+      <div class="buttons-container">
+        <a class="study" href="/study.html">
+          <img src="/images/icons/study.svg" alt="Estudar" />
+          Estudar
+        </a>
+        <a class="give-classes" href="/give-classes.html">
+          <img src="/images/icons/give-classes.svg" alt="Dar aulas" />
+          Dar aulas
+        </a>
+      </div>
+
+      <p class="total-connections">
+        Total de 200 conexões já realizadas.
+        <img src="/images/icons/purple-heart.svg" alt="Coração roxo" />
+      </p>
+    </div>
+  </body>
+</html>
+
+<!--
+    Existem mais de uma maneira de utilizarmos o CSS, uma das maneiras 
+seria declararmos atributos dentro das próprias tags HTML, mas isso não é feito para
+não ficar bagunçado
+Exemplo:
+<h1 style="color: red;">Proffy</h1>
+-->
+
+<!--
+     A outra forma, mais utilizada, será colocar um link dentro da tag head para 
+puxar o CSS de um arquivo externo
+Exemplo:   <link rel="stylesheet" href="style.css">
+-->
+
+<!-- 
+    Outra forma de utilizar o CSS é criar uma tag style só para ele dentro do head
+-->
+
+<!-- Ir em pesquisar e olhar em shortcuts quais os atalhos para a minha máquina-->
